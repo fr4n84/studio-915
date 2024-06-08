@@ -1,15 +1,22 @@
+'use client'
+//Import next fuctions
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 export default function Nav() {
+
+  const routerName = usePathname()
+  const validateRoute = routerName == '/exp'
   return (
     <>
-      <div className="flex fixed top-0 left-0 right-0 mt-10">
-        <span className="text-8xl logo-size">913</span>
+      <div className={`flex ${validateRoute? null : 'fixed'} top-0 left-0 right-0 mt-10`}>
+         {!validateRoute && <span className="text-8xl logo-size">913</span>}
         <nav className="flex justify-between  uppercase grow px-8">
-          <a href="#">
+          <Link href="#">
             <span>studio</span>
-          </a>
-          <a href="#">
+          </Link>
+          <Link href="/exp">
             <span>exp</span>
-          </a>
+          </Link>
           <a href="#">
             <span>contact</span>
           </a>
