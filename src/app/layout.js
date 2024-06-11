@@ -21,6 +21,20 @@ export default function RootLayout({ children }) {
           outerStyle={{
             backgroundColor: "rgba(0, 0, 0, 0.2)",
           }}
+          clickables={[
+            'a',
+            'img',
+            'input[type="text"]',
+            'input[type="email"]',
+            'input[type="number"]',
+            'input[type="submit"]',
+            'input[type="image"]',
+            'label[for]',
+            'select',
+            'textarea',
+            'button',
+            '.link',
+          ]}
         />
         <div className="container">{children}</div>
       </body>
