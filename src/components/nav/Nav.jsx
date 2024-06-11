@@ -17,7 +17,7 @@ export default function Nav() {
           <Link href="/exp">
             <span>exp</span>
           </Link>
-          <a href="#">
+          <a href="/contacts">
             <span>contact</span>
           </a>
         </nav>

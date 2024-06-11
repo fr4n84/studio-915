@@ -38,6 +38,10 @@ html.lenis {
   transform: translate3d(13.3315px, 0px, 0px) scale(1.1);
 }
 
+.position-contact {
+  margin-top: 270px;
+}
+
 .size-left {
   width: 33%;
   font-size: 20px !important;
