@@ -4,6 +4,7 @@
 
 html,
 body {
+  height: 100vh;
   overflow: auto;
   overflow-x: hidden;
   cursor: none;
@@ -150,4 +151,20 @@ footer {
 }
 .pos-15 {
   grid-area: 5 / 7 / 6 / 8;
+}
+
+@media screen and (max-width: 320px) {
+  .grid {
+    grid-area: main;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-row-gap: var(--rgap);
+    grid-column-gap: var(--cgap);
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;  /* Ocultar scroll */
 }

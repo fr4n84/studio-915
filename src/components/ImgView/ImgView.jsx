@@ -30,12 +30,19 @@ import DialogContent from "@mui/material/DialogContent";
 import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
 import Slide from "@mui/material/Slide";
+//Import dragable
+import Draggable from "react-draggable";
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
 });
 export default function ImgView() {
   const [open, setOpen] = useState(false);
+  const [isDragging, setIsDragging] = useState(false);
+
+  const handleMouseDown = () => {
+    setIsDragging(false);
+  };
 
   const handleClickOpen = () => {
     setOpen(true);
@@ -45,99 +52,42 @@ export default function ImgView() {
     setOpen(false);
   };
 
+  const eventLogger = (e, data) => {
+    console.log("Event: ", e);
+    console.log("Data: ", data);
+  };
+
+  const handleMouseUp = () => {
+    // Delay the check to ensure drag event is captured
+    setTimeout(() => {
+      if (!isDragging) {
+        handleClickOpen();
+      }
+    }, 0);
+  };
+
+  const handleDrag = () => {
+    setIsDragging(true);
+  };
+
   return (
     <>
-      <div className="grid">
-        <div className="grid__item  pos-1">
+      <Draggable
+        bounds="body"
+        defaultPosition={{x: 22, y: 400}}
+        onDrag={handleDrag}>
+        <div className="z-10 absolute">
           <Image
+            onMouseDown={handleMouseDown}
+            onMouseUp={handleMouseUp}
+            draggable="false"
             className=" rounded-sm "
             height={100}
             width={90}
             src={img2}
-            alt=""
-            onClick={handleClickOpen}></Image>
+            alt=""></Image>
         </div>
-        <div className="grid__item  pos-2">
-          <Image
-            className=" rounded-sm"
-            height={100}
-            width={90}
-            src={img2}
-            alt=""
-          />
-        </div>
-        <div className="grid__item  pos-3">
-          <Image
-            className=" rounded-sm"
-            height={100}
-            width={90}
-            src={img2}
-            alt=""
-          />
-        </div>
-        <div className="grid__item  pos-4">
-          <Image
-            className=" rounded-sm"
-            height={100}
-            width={90}
-            src={img2}
-            alt=""
-          />
-        </div>
-        <div className="grid__item  pos-5">
-          <Image
-            className=" rounded-sm"
-            height={100}
-            width={90}
-            src={img2}
-            alt=""
-          />
-        </div>
-        <div className="grid__item  pos-6">
-          <Image
-            className=" rounded-sm"
-            height={100}
-            width={90}
-            src={img2}
-            alt=""
-          />
-        </div>
-        <div className="grid__item  pos-7">
-          <Image
-            className=" rounded-sm"
-            height={100}
-            width={90}
-            src={img2}
-            alt=""
-          />
-        </div>
-        <div className="grid__item  pos-8">
-          <Image
-            className=" rounded-sm"
-            height={100}
-            width={90}
-            src={img2}
-            alt=""
-          />
-        </div>
-        <div className="grid__item  pos-9">
-          <Image
-            className=" rounded-sm"
-            height={100}
-            width={90}
-            src={img2}
-            alt=""
-          />
-
-          <Image
-            className=" rounded-sm"
-            height={100}
-            width={90}
-            src={img2}
-            alt=""
-          />
-        </div>
-      </div>
+      </Draggable>
 
       <Dialog
         open={open}
@@ -146,12 +96,7 @@ export default function ImgView() {
         onClose={handleClose}
         aria-describedby="alert-dialog-slide-description">
         <DialogContent className="p-0">
-          <Image
-          className="w-100"
-            src={img2}
-            height={700}
-            width={900}
-          />
+          <Image className="w-100" src={img2} height={700} width={900} />
         </DialogContent>
       </Dialog>
     </>
