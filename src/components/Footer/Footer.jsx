@@ -11,7 +11,7 @@ export default function Footer() {
       <div
         className={`flex ${
           curremRouter ? null : "fixed"
-        } butom-0 left-0 right-0 mt-10 px-9`}
+        } butom-0 left-0 right-0 `}
       >
         {!curremRouter && (
           <span className="size-left">
@@ -34,7 +34,7 @@ export default function Footer() {
           </span>
         )}
         <footer className="grow content-end text-end">
-            <p className="logo-size">STUDIO</p>
+            <p className="logo-size pt-5">STUDIO</p>
         </footer>
       </div>
     </>
