@@ -13,7 +13,7 @@ export default function contacts() {
     <>
       <Nav />
       <Grid className="position-contact" container spacing={2}>
-        <Grid item xs={7} className="mt-10">
+        <Grid item xs={8} className="mt-10">
           <p>
             CREAMOS Y REALIZAMOS EXPERIENCIAS CONCRETAS SIGUIENDO NUESTRA
             VISIÓN. NUESTRO INSTINTO Y ENTENDIENDO LAS NECESIDADES DEL CLIENTE,
@@ -21,7 +21,7 @@ export default function contacts() {
             DESARROLLÁNDOSE.
           </p>
         </Grid>
-        <Grid item xs={5}>
+        <Grid item xs={4}>
         
         <Image height={900} width={600} src={img5} alt="" />
         

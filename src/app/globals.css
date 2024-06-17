@@ -7,6 +7,7 @@ body {
   overflow: auto;
   overflow-x: hidden;
   cursor: none;
+  height: 100vh;
 }
 
 html.lenis {
@@ -44,6 +45,6 @@ html.lenis {
   font-size: 20px !important;
 }
 
-footer {
-  height: 41vh;
+::-webkit-scrollbar {   /* Tamaño del scroll en horizontal */
+  display: none;  /* Ocultar scroll */
 }
