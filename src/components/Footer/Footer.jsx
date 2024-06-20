@@ -9,8 +9,8 @@ export default function Footer() {
   return (
     <>
       <div
-        className={`flex ${
-          curremRouter ? null : "fixed"
+        className={`flex mt-10 px-4 md:px-7 ${
+          curremRouter ? null : "md:fixed"
         } butom-0 left-0 right-0 `}
       >
         {!curremRouter && (
@@ -33,7 +33,7 @@ export default function Footer() {
            
           </span>
         )}
-        <footer className="grow content-end text-end">
+        <footer className="grow content-end text-end hidden md:block">
             <p className="logo-size pt-5">STUDIO</p>
         </footer>
       </div>

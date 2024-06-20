@@ -45,6 +45,27 @@ html.lenis {
   font-size: 20px !important;
 }
 
+@media screen and (max-width: 768px) {
+  .slides {
+    margin-top: 270px;
+    display: none;
+    gap: 200px;
+  }
+
+  .size-left {
+    width: 100%;
+    font-size: 20px !important;
+  }
+
+  html.lenis {
+   display: block;
+  }
+
+  .logo-size {
+    font-size: 6rem !important;
+  }
+}
+
 ::-webkit-scrollbar {   /* Tamaño del scroll en horizontal */
   display: none;  /* Ocultar scroll */
 }

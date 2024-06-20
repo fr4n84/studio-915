@@ -9,10 +9,13 @@ export default function Nav() {
   return (
     <>
       <div
-        className={`flex ${
-          validateRouteFixed ? "fixed" : null
+        className={` ${
+          validateRouteFixed ? "block md:flex md:fixed" : "flex"
         } top-0 left-6 right-0 mt-10`}>
-        {validateRouteLogo && <span className="text-8xl logo-size">913</span>}
+        {validateRouteLogo && (
+          <span className="text-8xl hidden md:inline logo-size">913</span>
+        )}
+
         <nav className="flex justify-between  uppercase grow px-8">
           <Link href="/">
             <span>studio</span>
@@ -24,6 +27,7 @@ export default function Nav() {
             <span>contact</span>
           </a>
         </nav>
+        <h1 className="text-8xl  md:hidden logo-size text-center mt-10">913Studio</h1>
       </div>
     </>
   );

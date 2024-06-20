@@ -57,7 +57,7 @@ export default function CarrucelLoop() {
         infinite: true,
         syncTouch: true,
       }}>
-      <div className="slides">
+      <div className="slides hidden">
         <Image
           height={300}
           width={200}
