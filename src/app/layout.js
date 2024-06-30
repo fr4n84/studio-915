@@ -1,9 +1,13 @@
-import {Inter} from "next/font/google";
+import {Roboto} from "next/font/google";
 import "./globals.css";
 //Import react-animated-cursor
 import AnimatedCursor from "react-animated-cursor";
+import {Weight} from "lucide-react";
 
-const inter = Inter({subsets: ["latin"]});
+const roboto = Roboto({
+  subsets: ["latin"],
+  weight: ["100", "300", "400", "500", "700", "900"],
+});
 
 export const metadata = {
   title: "Create Next App",
@@ -12,8 +16,8 @@ export const metadata = {
 
 export default function RootLayout({children}) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
+    <html lang="es">
+      <body className={roboto.className}>
         <AnimatedCursor
           innerStyle={{
             backgroundColor: "#000",

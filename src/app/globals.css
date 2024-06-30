@@ -26,11 +26,20 @@ html.lenis {
   gap: 200px;
 }
 
+.swiper-slide {
+  width: 250.5px !important;
+  height: 300px !important;
+}
+
 .slides img {
   border-radius: 15px;
-  width: 33vw;
+  width: 100vw;
   height: 284px;
   transition: all 0.35s;
+}
+
+.studio_text-big {
+  font-size: 3rem;
 }
 
 .slides img:hover {
@@ -39,13 +48,67 @@ html.lenis {
   transform: translate3d(13.3315px, 0px, 0px) scale(1.1);
 }
 
-
 .size-left {
   width: 33%;
   font-size: 20px !important;
 }
 
-@media screen and (max-width: 768px) {
+.btn-flip {
+  opacity: 1;
+  outline: 0;
+  color: #fff;
+  line-height: 40px;
+  position: relative;
+  text-align: center;
+  letter-spacing: 1px;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.btn-flip:hover::after {
+  opacity: 1;
+  transform: translateY(0) rotateX(0);
+}
+
+.btn-flip:hover::before {
+  opacity: 0;
+  transform: translateY(50%) rotateX(90deg);
+}
+
+.btn-flip::after {
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  color: #adadaf;
+  display: block;
+  transition: 0.5s;
+  position: absolute;
+  content: attr(data-back);
+  transform: translateY(-50%) rotateX(90deg);
+}
+
+.btn-flip::before {
+  top: 0;
+  left: 0;
+  opacity: 1;
+  color: #323237;
+  display: block;
+  padding: 0 30px;
+  line-height: 40px;
+  transition: 0.5s;
+  position: relative;
+  content: attr(data-front);
+  transform: translateY(0) rotateX(0);
+}
+
+.contactImg{
+  height: 200px !important;
+  width: 300px !important;
+}
+
+@media screen and (max-width: 758px)  {
   .slides {
     margin-top: 270px;
     display: none;
@@ -54,18 +117,40 @@ html.lenis {
 
   .size-left {
     width: 100%;
-    font-size: 20px !important;
+    font-size: 18px !important;
   }
 
   html.lenis {
-   display: block;
+    display: block !important;
+    scrollbar-width: none;
   }
 
   .logo-size {
-    font-size: 6rem !important;
+    font-size: 4rem !important;
   }
 }
 
-::-webkit-scrollbar {   /* Tamaño del scroll en horizontal */
-  display: none;  /* Ocultar scroll */
+@media screen and (max-width: 1920px) and (min-width: 759px)  {
+  .slides {
+    margin-top: 224px;
+    gap: 200px;
+  }
+
+  .size-left {
+    width: 40%;
+    font-size: 14px !important;
+  }
+
+  html.lenis {
+    display: table !important;
+  }
+
+  .logo-size {
+    font-size: 9rem !important;
+  }
+}
+
+::-webkit-scrollbar {
+  /* Tamaño del scroll en horizontal */
+  display: none; /* Ocultar scroll */
 }

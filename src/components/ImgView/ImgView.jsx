@@ -5,11 +5,11 @@ import {useState} from "react";
 import Image from "next/image";
 import Link from "next/link";
 //Import images
-import img1 from "../../assets/images/img1.jpg";
-import img2 from "../../assets/images/img2.jpg";
-import img3 from "../../assets/images/img3.jpg";
-import img4 from "../../assets/images/img4.jpg";
-import img5 from "../../assets/images/img5.jpg";
+import img1xp from "../../assets/images/img1xp.jpg";
+import img2xp from "../../assets/images/img2xp.jpg";
+import img3xp from "../../assets/images/img3xp.jpg";
+import img4xp from "../../assets/images/img4xp.jpg";
+import img5xp from "../../assets/images/img5xp.jpg";
 import img6 from "../../assets/images/img6.jpg";
 import img7 from "../../assets/images/img7.jpg";
 import img8 from "../../assets/images/img8.jpg";
@@ -72,11 +72,12 @@ export default function ImgView() {
 
   return (
     <>
+     {/*  Escritorio dragable */}
       <Draggable
         bounds="body"
         defaultPosition={{x: 22, y: 400}}
         onDrag={handleDrag}>
-        <div className="z-10 absolute">
+        <div className="z-10  hidden md:inline-block absolute">
           <Image
             onMouseDown={handleMouseDown}
             onMouseUp={handleMouseUp}
@@ -84,7 +85,94 @@ export default function ImgView() {
             className=" rounded-sm "
             height={100}
             width={90}
-            src={img2}
+            src={img2xp}
+            alt=""></Image>
+        </div>
+      </Draggable>
+
+
+ {/*  movile dragable */}
+      <Draggable
+        onDrag={handleDrag}
+        bounds="body"
+        defaultPosition={{x: 22, y: 300}}>
+        <div className="z-10  md:hidden absolute">
+          <Image
+            onMouseDown={handleMouseDown}
+            onClick={() => handleClickOpen()}
+            draggable="false"
+            className=" rounded-sm "
+            height={5}
+            width={100}
+            src={img1xp}
+            alt=""></Image>
+        </div>
+      </Draggable>
+
+      <Draggable
+        onDrag={handleDrag}
+        bounds="body"
+        defaultPosition={{x: 220, y: 250}}>
+        <div className="z-10  md:hidden absolute">
+          <Image
+            onMouseDown={handleMouseDown}
+            onClick={() => handleClickOpen()}
+            draggable="false"
+            className=" rounded-sm "
+            height={100}
+            width={90}
+            src={img2xp}
+            alt=""></Image>
+        </div>
+      </Draggable>
+
+      <Draggable
+        onDrag={handleDrag}
+        bounds="body"
+        defaultPosition={{x: 100, y: 80}}>
+        <div className="z-10  md:hidden absolute">
+          <Image
+            onMouseDown={handleMouseDown}
+            onClick={() => handleClickOpen()}
+            draggable="false"
+            className=" rounded-sm "
+            height={100}
+            width={90}
+            src={img3xp}
+            alt=""></Image>
+        </div>
+      </Draggable>
+
+      <Draggable
+        onDrag={handleDrag}
+        bounds="body"
+        defaultPosition={{x: 70, y: 450}}>
+        <div className="z-10  md:hidden absolute">
+          <Image
+            onMouseDown={handleMouseDown}
+            onClick={() => handleClickOpen()}
+            draggable="false"
+            className=" rounded-sm "
+            height={100}
+            width={90}
+            src={img4xp}
+            alt=""></Image>
+        </div>
+      </Draggable>
+
+      <Draggable
+        onDrag={handleDrag}
+        bounds="body"
+        defaultPosition={{x: 250, y: 490}}>
+        <div className="z-10  md:hidden absolute">
+          <Image
+            onMouseDown={handleMouseDown}
+            onClick={() => handleClickOpen()}
+            draggable="false"
+            className=" rounded-sm "
+            height={100}
+            width={90}
+            src={img5xp}
             alt=""></Image>
         </div>
       </Draggable>
@@ -96,7 +184,7 @@ export default function ImgView() {
         onClose={handleClose}
         aria-describedby="alert-dialog-slide-description">
         <DialogContent className="p-0">
-          <Image className="w-100" src={img2} height={700} width={900} />
+          <Image className="w-100" src={img2xp} height={700} width={900} />
         </DialogContent>
       </Dialog>
     </>
