@@ -24,21 +24,15 @@ export default function CarrucelResponsive() {
   return (
     <>
       <Swiper
-        effect={"coverflow"}
-        grabCursor={true}
-        centeredSlides={true}
-        slidesPerView={"2"}
-        coverflowEffect={{
-          rotate: 50,
-          stretch: 0,
-          depth: 100,
-          modifier: 1,
-          slideShadows: true,
+        slidesPerView={1}
+        spaceBetween={5}
+        pagination={{
+          clickable: true,
         }}
-        modules={[EffectCoverflow, Pagination]}
-        className="mySwiper mb-5">
+        modules={[Pagination]}
+        className="mySwiper">
         <SwiperSlide>
-          <Image height={700} width={700} src={img1} alt="" />
+          <img src={img1.src} alt="" />
         </SwiperSlide>
         <SwiperSlide>
           <Image height={300} width={300} src={img2} alt="" />

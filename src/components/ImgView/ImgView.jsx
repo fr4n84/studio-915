@@ -1,6 +1,6 @@
 "use client";
 //Import react fuctions
-import {useState} from "react";
+import {useState, useEffect, useRef} from "react";
 //Import next fuction
 import Image from "next/image";
 import Link from "next/link";
@@ -32,36 +32,40 @@ import DialogTitle from "@mui/material/DialogTitle";
 import Slide from "@mui/material/Slide";
 //Import dragable
 import Draggable from "react-draggable";
+//Import motion
+import {motion} from "framer-motion";
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
 });
 export default function ImgView() {
+  const constraintsRef = useRef(null);
+  const constraintsResponsiveRef = useRef(null);
   const [open, setOpen] = useState(false);
   const [isDragging, setIsDragging] = useState(false);
+  const [modalImg, setModalImg] = useState("");
 
   const handleMouseDown = () => {
     setIsDragging(false);
   };
 
-  const handleClickOpen = () => {
+  const handleClickOpen = (img) => {
+    setModalImg(img);
     setOpen(true);
   };
 
   const handleClose = () => {
     setOpen(false);
+    setTimeout(() => {
+      setModalImg("");
+    }, 100);
   };
 
-  const eventLogger = (e, data) => {
-    console.log("Event: ", e);
-    console.log("Data: ", data);
-  };
-
-  const handleMouseUp = () => {
+  const handleMouseUp = (e, img) => {
     // Delay the check to ensure drag event is captured
     setTimeout(() => {
       if (!isDragging) {
-        handleClickOpen();
+        handleClickOpen(img.src);
       }
     }, 0);
   };
@@ -70,113 +74,205 @@ export default function ImgView() {
     setIsDragging(true);
   };
 
+  console.log(constraintsRef);
+
   return (
     <>
-     {/*  Escritorio dragable */}
-      <Draggable
-        bounds="body"
-        defaultPosition={{x: 22, y: 400}}
-        onDrag={handleDrag}>
-        <div className="z-10  hidden md:inline-block absolute">
+      {/*  Escritorio dragable */}
+      <motion.div ref={constraintsRef} className="container-dragable hidden md:block ">
+        <motion.div
+          style={{bottom: "30%", left: "50%"}}
+          onDrag={handleDrag}
+          drag
+          dragConstraints={constraintsRef}
+          className="absolute  md:inline-block">
           <Image
             onMouseDown={handleMouseDown}
-            onMouseUp={handleMouseUp}
+            onMouseUp={(e) => {
+              handleMouseUp(e, img1xp);
+            }}
             draggable="false"
             className=" rounded-sm "
             height={100}
             width={90}
-            src={img2xp}
-            alt=""></Image>
-        </div>
-      </Draggable>
-
-
- {/*  movile dragable */}
-      <Draggable
-        onDrag={handleDrag}
-        bounds="body"
-        defaultPosition={{x: 22, y: 300}}>
-        <div className="z-10  md:hidden absolute">
-          <Image
-            onMouseDown={handleMouseDown}
-            onClick={() => handleClickOpen()}
-            draggable="false"
-            className=" rounded-sm "
-            height={5}
-            width={100}
             src={img1xp}
             alt=""></Image>
-        </div>
-      </Draggable>
+        </motion.div>
 
-      <Draggable
-        onDrag={handleDrag}
-        bounds="body"
-        defaultPosition={{x: 220, y: 250}}>
-        <div className="z-10  md:hidden absolute">
+        <motion.div
+          style={{bottom: "10%", left: "3%"}}
+          onDrag={handleDrag}
+          drag
+          dragConstraints={constraintsRef}
+          className="absolute  md:inline-block">
           <Image
             onMouseDown={handleMouseDown}
-            onClick={() => handleClickOpen()}
+            onMouseUp={(e) => {
+              handleMouseUp(e, img2xp);
+            }}
             draggable="false"
             className=" rounded-sm "
             height={100}
             width={90}
             src={img2xp}
             alt=""></Image>
-        </div>
-      </Draggable>
+        </motion.div>
 
-      <Draggable
-        onDrag={handleDrag}
-        bounds="body"
-        defaultPosition={{x: 100, y: 80}}>
-        <div className="z-10  md:hidden absolute">
+        <motion.div
+          style={{bottom: "19%", left: "33%"}}
+          onDrag={handleDrag}
+          drag
+          dragConstraints={constraintsRef}
+          className="absolute  md:inline-block">
           <Image
             onMouseDown={handleMouseDown}
-            onClick={() => handleClickOpen()}
+            onMouseUp={(e) => {
+              handleMouseUp(e, img3xp);
+            }}
             draggable="false"
             className=" rounded-sm "
             height={100}
             width={90}
             src={img3xp}
             alt=""></Image>
-        </div>
-      </Draggable>
+        </motion.div>
 
-      <Draggable
-        onDrag={handleDrag}
-        bounds="body"
-        defaultPosition={{x: 70, y: 450}}>
-        <div className="z-10  md:hidden absolute">
+        <motion.div
+          style={{top: "15%", left: "77%"}}
+          onDrag={handleDrag}
+          drag
+          dragConstraints={constraintsRef}
+          className="absolute  md:inline-block">
           <Image
             onMouseDown={handleMouseDown}
-            onClick={() => handleClickOpen()}
+            onMouseUp={(e) => {
+              handleMouseUp(e, img4xp);
+            }}
             draggable="false"
             className=" rounded-sm "
             height={100}
             width={90}
             src={img4xp}
             alt=""></Image>
-        </div>
-      </Draggable>
-
-      <Draggable
-        onDrag={handleDrag}
-        bounds="body"
-        defaultPosition={{x: 250, y: 490}}>
-        <div className="z-10  md:hidden absolute">
+        </motion.div>
+        <motion.div
+          style={{top: "22%", left: "36%"}}
+          onDrag={handleDrag}
+          drag
+          dragConstraints={constraintsRef}
+          className="absolute  md:inline-block">
           <Image
             onMouseDown={handleMouseDown}
-            onClick={() => handleClickOpen()}
+            onMouseUp={(e) => {
+              handleMouseUp(e, img5xp);
+            }}
             draggable="false"
             className=" rounded-sm "
             height={100}
             width={90}
             src={img5xp}
             alt=""></Image>
-        </div>
-      </Draggable>
+        </motion.div>
+      </motion.div>
 
+    
+
+      {/*  movile dragable */}
+      <motion.div ref={constraintsResponsiveRef} className="container-dragable  md:hidden">
+        <motion.div
+          style={{bottom: "30%", left: "50%"}}
+          onDrag={handleDrag}
+          drag
+          dragConstraints={constraintsResponsiveRef}
+          className="absolute  md:inline-block">
+          <Image
+            onMouseDown={handleMouseDown}
+            onMouseUp={(e) => {
+              handleMouseUp(e, img1xp);
+            }}
+            draggable="false"
+            className=" rounded-sm "
+            height={100}
+            width={90}
+            src={img1xp}
+            alt=""></Image>
+        </motion.div>
+
+        <motion.div
+          style={{bottom: "10%", left: "3%"}}
+          onDrag={handleDrag}
+          drag
+          dragConstraints={constraintsResponsiveRef}
+          className="absolute  md:inline-block">
+          <Image
+            onMouseDown={handleMouseDown}
+            onMouseUp={(e) => {
+              handleMouseUp(e, img2xp);
+            }}
+            draggable="false"
+            className=" rounded-sm "
+            height={100}
+            width={90}
+            src={img2xp}
+            alt=""></Image>
+        </motion.div>
+
+        <motion.div
+          style={{bottom: "46%", left: "17%"}}
+          onDrag={handleDrag}
+          drag
+          dragConstraints={constraintsResponsiveRef}
+          className="absolute  md:inline-block">
+          <Image
+            onMouseDown={handleMouseDown}
+            onMouseUp={(e) => {
+              handleMouseUp(e, img3xp);
+            }}
+            draggable="false"
+            className=" rounded-sm "
+            height={100}
+            width={90}
+            src={img3xp}
+            alt=""></Image>
+        </motion.div>
+
+        <motion.div
+          style={{bottom: "10%", left: "70%"}}
+          onDrag={handleDrag}
+          drag
+          dragConstraints={constraintsResponsiveRef}
+          className="absolute  md:inline-block">
+          <Image
+            onMouseDown={handleMouseDown}
+            onMouseUp={(e) => {
+              handleMouseUp(e, img4xp);
+            }}
+            draggable="false"
+            className=" rounded-sm "
+            height={100}
+            width={90}
+            src={img4xp}
+            alt=""></Image>
+        </motion.div>
+        <motion.div
+          style={{top: "22%", left: "36%"}}
+          onDrag={handleDrag}
+          drag
+          dragConstraints={constraintsResponsiveRef}
+          className="absolute  md:inline-block">
+          <Image
+            onMouseDown={handleMouseDown}
+            onMouseUp={(e) => {
+              handleMouseUp(e, img5xp);
+            }}
+            draggable="false"
+            className=" rounded-sm "
+            height={100}
+            width={90}
+            src={img5xp}
+            alt=""></Image>
+        </motion.div>
+      </motion.div>
       <Dialog
         open={open}
         TransitionComponent={Transition}
@@ -184,7 +280,7 @@ export default function ImgView() {
         onClose={handleClose}
         aria-describedby="alert-dialog-slide-description">
         <DialogContent className="p-0">
-          <Image className="w-100" src={img2xp} height={700} width={900} />
+          <Image className="w-100" src={modalImg} height={700} width={900} />
         </DialogContent>
       </Dialog>
     </>

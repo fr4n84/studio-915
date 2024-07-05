@@ -56,17 +56,17 @@ export default function CarrucelLoop() {
         syncTouch: true,
       }}>
       <div className="slides">
-        <Image height={300} width={200} src={img7} alt="" />
-        <Image height={300} width={200} src={img1} alt="" />
-        <Image height={300} width={200} src={img4} alt="" />
-        <Image height={300} width={200} src={img5} alt="" />
-        <Image height={300} width={200} src={img6} alt="" />
-        <Image height={300} width={200} src={img7} alt="" />
-        <Image height={300} width={200} src={img1} alt="" />
-        <Image height={300} width={200} src={img4} alt="" />
-        <Image height={300} width={200} src={img5} alt="" />
-        <Image height={300} width={200} src={img6} alt="" />
-        <Image height={300} width={200} src={img7} alt="" />
+        <Image height={300} width={200} objectFit="cover" src={img7} alt="" />
+        <Image height={300} width={200} objectFit="cover" src={img1} alt="" />
+        <Image height={300} width={200} objectFit="cover" src={img4} alt="" />
+        <Image height={300} width={200} objectFit="cover" src={img5} alt="" />
+        <Image height={300} width={200} objectFit="cover" src={img6} alt="" />
+        <Image height={300} width={200} objectFit="cover" src={img7} alt="" />
+        <Image height={300} width={200} objectFit="cover" src={img1} alt="" />
+        <Image height={300} width={200} objectFit="cover" src={img4} alt="" />
+        <Image height={300} width={200} objectFit="cover" src={img5} alt="" />
+        <Image height={300} width={200} objectFit="cover" src={img6} alt="" />
+        <Image height={300} width={200} objectFit="cover" src={img7} alt="" />
       </div>
 
       <Dialog
