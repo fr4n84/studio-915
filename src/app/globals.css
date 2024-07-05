@@ -131,6 +131,11 @@ html.lenis {
   margin-left: 20px !important;
 }
 
+.swiperResponsive:nth-child(1n){
+  width: 90%;
+}
+
+
 @media screen and (max-width: 758px) {
   .slides {
     margin-top: 270px;
@@ -172,7 +177,6 @@ html.lenis {
   .size-left {
     width: 40%;
     font-size: 14px !important;
-   
   }
   .line-height_size{
     margin-top: -50px;

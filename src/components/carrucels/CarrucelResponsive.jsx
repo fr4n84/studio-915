@@ -24,14 +24,14 @@ export default function CarrucelResponsive() {
   return (
     <>
       <Swiper
-        slidesPerView={1}
-        spaceBetween={5}
+        slidesPerView={'auto'}
+        spaceBetween={20}
         pagination={{
           clickable: true,
         }}
         modules={[Pagination]}
         className="mySwiper">
-        <SwiperSlide>
+        <SwiperSlide className="swiperResponsive">
           <img src={img1.src} alt="" />
         </SwiperSlide>
         <SwiperSlide>
