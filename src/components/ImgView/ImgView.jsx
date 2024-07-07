@@ -43,7 +43,7 @@ export default function ImgView() {
   const constraintsResponsiveRef = useRef(null);
   const [open, setOpen] = useState(false);
   const [isDragging, setIsDragging] = useState(false);
-  const [modalImg, setModalImg] = useState("");
+  const [modalImg, setModalImg] = useState("/_next/static/media/img5xp.f5eea42c.jpg");
 
   const handleMouseDown = () => {
     setIsDragging(false);
@@ -51,17 +51,19 @@ export default function ImgView() {
 
   const handleClickOpen = (img) => {
     setModalImg(img);
-    setOpen(true);
+   
+    setTimeout(() => {
+      setOpen(true);
+    }, 100);
   };
 
   const handleClose = () => {
     setOpen(false);
-    setTimeout(() => {
-      setModalImg("");
-    }, 100);
+   
   };
 
   const handleMouseUp = (e, img) => {
+    console.log(img);
     // Delay the check to ensure drag event is captured
     setTimeout(() => {
       if (!isDragging) {
@@ -79,7 +81,9 @@ export default function ImgView() {
   return (
     <>
       {/*  Escritorio dragable */}
-      <motion.div ref={constraintsRef} className="container-dragable hidden md:block ">
+      <motion.div
+        ref={constraintsRef}
+        className="container-dragable hidden md:block ">
         <motion.div
           style={{bottom: "30%", left: "50%"}}
           onDrag={handleDrag}
@@ -96,7 +100,7 @@ export default function ImgView() {
             height={100}
             width={90}
             src={img1xp}
-            alt=""></Image>
+            alt="Name example"></Image>
         </motion.div>
 
         <motion.div
@@ -115,7 +119,7 @@ export default function ImgView() {
             height={100}
             width={90}
             src={img2xp}
-            alt=""></Image>
+            alt="Name example"></Image>
         </motion.div>
 
         <motion.div
@@ -134,7 +138,7 @@ export default function ImgView() {
             height={100}
             width={90}
             src={img3xp}
-            alt=""></Image>
+            alt="Name example"></Image>
         </motion.div>
 
         <motion.div
@@ -153,7 +157,7 @@ export default function ImgView() {
             height={100}
             width={90}
             src={img4xp}
-            alt=""></Image>
+            alt="Name example"></Image>
         </motion.div>
         <motion.div
           style={{top: "22%", left: "36%"}}
@@ -171,14 +175,14 @@ export default function ImgView() {
             height={100}
             width={90}
             src={img5xp}
-            alt=""></Image>
+            alt="Name example"></Image>
         </motion.div>
       </motion.div>
 
-    
-
       {/*  movile dragable */}
-      <motion.div ref={constraintsResponsiveRef} className="container-dragable  md:hidden">
+      <motion.div
+        ref={constraintsResponsiveRef}
+        className="container-dragable  md:hidden">
         <motion.div
           style={{bottom: "30%", left: "50%"}}
           onDrag={handleDrag}
@@ -280,7 +284,7 @@ export default function ImgView() {
         onClose={handleClose}
         aria-describedby="alert-dialog-slide-description">
         <DialogContent className="p-0">
-          <Image className="w-100" src={modalImg} height={700} width={900} />
+          <Image className="w-100" src={modalImg} height={700} width={900} alt="holis" />
         </DialogContent>
       </Dialog>
     </>

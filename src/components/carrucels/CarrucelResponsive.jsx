@@ -29,28 +29,27 @@ export default function CarrucelResponsive() {
         pagination={{
           clickable: true,
         }}
-        modules={[Pagination]}
         className="mySwiper">
         <SwiperSlide className="swiperResponsive">
-          <img src={img1.src} alt="" />
+          <img className="img-size" src={img1.src} alt="" />
         </SwiperSlide>
-        <SwiperSlide>
-          <Image height={300} width={300} src={img2} alt="" />
+        <SwiperSlide className="swiperResponsive">
+          <Image className="img-size" height={300} width={300} src={img2} alt="" />
         </SwiperSlide>
-        <SwiperSlide>
-          <Image height={300} width={300} src={img3} alt="" />
+        <SwiperSlide className="swiperResponsive">
+          <Image className="img-size" height={300} width={300} src={img3} alt="" />
         </SwiperSlide>
-        <SwiperSlide>
-          <Image height={300} width={300} src={img4} alt="" />
+        <SwiperSlide className="swiperResponsive">
+          <Image className="img-size" height={300} width={300} src={img4} alt="" />
         </SwiperSlide>
-        <SwiperSlide>
-          <Image height={300} width={300} src={img5} alt="" />
+        <SwiperSlide className="swiperResponsive">
+          <Image className="img-size" height={300} width={300} src={img5} alt="" />
         </SwiperSlide>
-        <SwiperSlide>
-          <Image height={300} width={300} src={img6} alt="" />
+        <SwiperSlide className="swiperResponsive">
+          <Image className="img-size" height={300} width={300} src={img6} alt="" />
         </SwiperSlide>
-        <SwiperSlide>
-          <Image height={300} width={300} src={img7} alt="" />
+        <SwiperSlide className="swiperResponsive">
+          <Image className="img-size" height={300} width={300} src={img7} alt="" />
         </SwiperSlide>
       </Swiper>
     </>

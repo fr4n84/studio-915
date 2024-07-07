@@ -20,11 +20,11 @@ html.lenis {
   font-weight: bold !important;
 }
 
-.img-logo--nav{
+.img-logo--nav {
   height: 180px;
 }
 
-.img-logo--footer{
+.img-logo--footer {
   height: 150px;
 }
 
@@ -33,7 +33,6 @@ html.lenis {
   display: flex;
   gap: 200px;
 }
-
 
 .slides img {
   border-radius: 15px;
@@ -122,19 +121,41 @@ html.lenis {
   touch-action: none;
 }
 
-.container-dragable{
+.container-dragable {
   width: 100%;
   height: 90vh;
 }
 
-.text-position_contact{
+.text-position_contact {
   margin-left: 20px !important;
 }
 
-.swiperResponsive:nth-child(1n){
+.img-size {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: 450px !important;
+  object-fit: cover !important;
+}
+
+.swiperResponsive:nth-child(1n) {
   width: 90%;
 }
 
+.swiperResponsive:nth-child(2n) {
+  width: 90%;
+}
+
+.swiperResponsive:nth-child(3n) {
+  width: 90%;
+}
+
+.swiperResponsive:nth-child(4n) {
+  width: 90%;
+}
+
+.swiperResponsive:nth-child(5n) {
+  width: 90%;
+}
 
 @media screen and (max-width: 758px) {
   .slides {
@@ -158,14 +179,14 @@ html.lenis {
     font-size: 4rem !important;
   }
 
-  .container-dragable{
+  .container-dragable {
     width: 100%;
     height: 78vh;
   }
 
-  .text-position_contact{
-  margin-left: 0px !important;
-}
+  .text-position_contact {
+    margin-left: 0px !important;
+  }
 }
 
 @media screen and (max-width: 1920px) and (min-width: 759px) {
@@ -178,7 +199,7 @@ html.lenis {
     width: 40%;
     font-size: 14px !important;
   }
-  .line-height_size{
+  .line-height_size {
     margin-top: -50px;
   }
   html.lenis {
@@ -190,19 +211,18 @@ html.lenis {
     font-weight: 400 !important;
   }
 
-  .line-height_footer{
+  .line-height_footer {
     line-height: 132px !important;
   }
 
-  .img-position{
+  .img-position {
     margin-top: -200px;
     margin-bottom: 210px;
   }
 
-  .text-position_contact{
+  .text-position_contact {
     margin-left: 170px !important;
   }
-  
 }
 
 ::-webkit-scrollbar {
