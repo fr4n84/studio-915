@@ -54,7 +54,6 @@ export default function CarrucelLoop() {
     setOpen(false);
   };
 
-  console.log(window)
   return (
     <ReactLenis
       infinite={true}
