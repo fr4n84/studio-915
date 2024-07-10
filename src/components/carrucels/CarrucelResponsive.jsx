@@ -31,7 +31,7 @@ export default function CarrucelResponsive() {
         }}
         className="mySwiper">
         <SwiperSlide className="swiperResponsive">
-          <img className="img-size" src={img1.src} alt="" />
+          <Image className="img-size" src={img1} alt="" />
         </SwiperSlide>
         <SwiperSlide className="swiperResponsive">
           <Image className="img-size" height={300} width={300} src={img2} alt="" />

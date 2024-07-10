@@ -36,6 +36,15 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 
 export default function CarrucelLoop() {
   const [open, setOpen] = useState(false);
+  const [validatorScreen, setValidatorScreen] = useState('vertical')
+  const [validatorInfinity, setValidatorInfinity] = useState(false)
+
+  useEffect(()=>{
+    if(window.innerWidth > 768){
+      setValidatorScreen('horizontal')
+      setValidatorInfinity(true)
+    } 
+  }, [])
 
   const handleClickOpen = () => {
     setOpen(true);
@@ -44,15 +53,17 @@ export default function CarrucelLoop() {
   const handleClose = () => {
     setOpen(false);
   };
+
+  console.log(window)
   return (
     <ReactLenis
       infinite={true}
       syncTouch={true}
       root
       options={{
-        orientation: "horizontal",
+        orientation: `${validatorScreen}`,
         gestureOrientataion: "both",
-        infinite: true,
+        infinite: validatorInfinity,
         syncTouch: true,
       }}>
       <div className="slides">

@@ -170,10 +170,7 @@ html.lenis {
     margin: 0px 20px;
   }
 
-  html.lenis {
-    display: block !important;
-    scrollbar-width: none;
-  }
+
 
   .logo-size {
     font-size: 4rem !important;

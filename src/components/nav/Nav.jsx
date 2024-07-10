@@ -10,7 +10,6 @@ export default function Nav() {
   const validateRouteLogo =
     routerName == "/" || routerName == "/contacts" || routerName == "/studio";
   const validateRouteFixed = routerName == "/";
-  console.log(logo);
   return (
     <>
       <div
@@ -21,7 +20,7 @@ export default function Nav() {
         } top-0 left-6 right-0 mt-10`}>
         {validateRouteLogo && (
           <Link href="/" className="hidden md:block">
-            <img className="img-logo--nav" src={logo.src} alt="alt"></img>
+            <Image className="img-logo--nav" src={logo} alt="Estudio"></Image>
           </Link>
         )}
 
