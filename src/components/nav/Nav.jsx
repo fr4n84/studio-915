@@ -5,6 +5,7 @@ import Image from "next/image";
 import {usePathname} from "next/navigation";
 //Import images
 import logo from "../../assets/images/logo.png";
+import logoResponsive from "../../assets/images/logoResponsive.png";
 export default function Nav() {
   const routerName = usePathname();
   const validateRouteLogo =
@@ -41,10 +42,10 @@ export default function Nav() {
             data-back="Contact"
             data-front="Contact"></Link>
         </nav>
-        <Link href="/">
-          <h1 className="text-8xl  md:hidden logo-size text-center mt-10">
-            913Studio
-          </h1>
+        <Link
+          href="/"
+          className="text-8xl  md:hidden logo-size text-center mt-10 flex justify-center">
+          <Image src={logoResponsive} width={300} alt="Logo 913Studio"></Image>
         </Link>
       </div>
     </>
