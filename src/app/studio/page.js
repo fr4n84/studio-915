@@ -23,7 +23,7 @@ export default function first(second) {
         <Grid item xs={12} lg={6}>
           <p className="px-4  mt-7 mb-5 md:mt-11 md:mb-0  md:px-0">
             CREAMOS Y REALIZAMOS EXPERIENCIAS CONCRETAS SIGUIENDO NUESTRA
-            VISIÓN. NUESTRO INSTINTO Y ENTENDIENDO LAS NECESIDADES DEL CLIENTE,
+            VISIÓ E NUESTRO INSTINTO. ENTENDIENDO LAS NECESIDADES DEL CLIENTE,
             DEMOSTRANDO QUE CADA MARCA SIEMPRE PUEDE CRECER Y SEGUIR
             DESARROLLÁNDOSE.
           </p>
@@ -62,9 +62,9 @@ export default function first(second) {
             #CULTURA
           </p>
           <p className="px-4 md:px-0 md:w-2/3 text-position_contact">
-            EN NUESTRO CASO, ENTENDEMOS LA CULTURA COMO UNA MANIFESTACIÓN DE
+           ENTENDEMOS LA CULTURA COMO UNA MANIFESTACIÓN DE
             VALORES, CREENCIAS Y TRADICIONES A TRAVÉS DE SUS PRODUCCIONES
-            ARTISTICAS. QUIEN ENTIENDE LA CULTURA, ENTIENDE LO QUE LA SOCIEDAD
+            ARTÍSTICAS. QUIEN ENTIENDE LA CULTURA ENTIENDE LO QUE LA SOCIEDAD
             QUIERE Y LE GUSTA.
           </p>
           <p className="mt-10 font-bold px-4 md:px-0 text-position_contact">
@@ -72,7 +72,7 @@ export default function first(second) {
           </p>
           <p className="px-4 md:px-0 md:w-2/3 text-position_contact">
             NUESTRA PERSPECTIVA DE LA SOCIEDAD Y MUCHAS LLUVIAS DE IDEAS SON EL
-            COMIENZO PARA DAR FORMA A UNA IDEA. PENSAR PARA NOSOTROS, NO ES UNA
+            COMIENZO PARA DAR FORMA A UNA IDEA. PENSAR, PARA NOSOTROS NO ES UNA
             PALABRA ABSTRACTA, SI NO UNA VÍA DE ENTRADA A LA CREATIVIDAD Y A
             ENCONTRAR LA COMUNICACIÓN ADECUADA PARA CADA PROYECTO
           </p>
@@ -106,7 +106,7 @@ export default function first(second) {
             LA CURIOSIDAD ES UNO DE LOS CAMINOS QUE LLEVA A LA CREATIVIDAD, NOS
             IMPULSA A EXPLORAR NUEVAS MANERAS DE PENSAMIENTO, PERSPECTIVAS Y
             SOLUCIONES. LA CREATIVIDAD FLORECE CUANDO NOS PERMITIMOS CUESTIONAR,
-            INVESTIGAR Y DESCUBRIR, Y LA CURIOSIDAD ES EL MOTOR QUE IMPULSA
+            INVESTIGAR Y DESCUBRIR, LA CURIOSIDAD ES EL MOTOR QUE IMPULSA
             ESTOS PROCESOS.
           </p>
         </Grid>

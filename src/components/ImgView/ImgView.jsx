@@ -10,17 +10,10 @@ import img2xp from "../../assets/images/img2xp.jpg";
 import img3xp from "../../assets/images/img3xp.jpg";
 import img4xp from "../../assets/images/img4xp.jpg";
 import img5xp from "../../assets/images/img5xp.jpg";
-import img6 from "../../assets/images/img6.jpg";
-import img7 from "../../assets/images/img7.jpg";
-import img8 from "../../assets/images/img8.jpg";
-import img9 from "../../assets/images/img9.jpg";
-import img10 from "../../assets/images/img10.jpg";
-import img11 from "../../assets/images/img11.jpg";
-import img12 from "../../assets/images/img11.jpg";
-import img13 from "../../assets/images/img11.jpg";
-import img14 from "../../assets/images/img11.jpg";
-import img15 from "../../assets/images/img11.jpg";
-import img16 from "../../assets/images/img11.jpg";
+import img6xp from "../../assets/images/img6xp.jpg";
+import img7xp from "../../assets/images/img7xp.jpg";
+import img8xp from "../../assets/images/img8xp.jpg";
+
 //Import mui compoents
 import * as React from "react";
 import Button from "@mui/material/Button";
@@ -177,6 +170,61 @@ export default function ImgView() {
             src={img5xp}
             alt="Name example"></Image>
         </motion.div>
+
+        <motion.div
+          style={{top: "38%", left: "12%"}}
+          onDrag={handleDrag}
+          drag
+          dragConstraints={constraintsRef}
+          className="absolute  md:inline-block">
+          <Image
+            onMouseDown={handleMouseDown}
+            onMouseUp={(e) => {
+              handleMouseUp(e, img6xp);
+            }}
+            draggable="false"
+            className=" rounded-sm "
+            height={100}
+            width={90}
+            src={img6xp}
+            alt="Name example"></Image>
+        </motion.div>
+        <motion.div
+          style={{top: "22%", left: "56%"}}
+          onDrag={handleDrag}
+          drag
+          dragConstraints={constraintsRef}
+          className="absolute  md:inline-block">
+          <Image
+            onMouseDown={handleMouseDown}
+            onMouseUp={(e) => {
+              handleMouseUp(e, img7xp);
+            }}
+            draggable="false"
+            className=" rounded-sm "
+            height={100}
+            width={90}
+            src={img7xp}
+            alt="Name example"></Image>
+        </motion.div>
+        <motion.div
+          style={{top: "53%", left: "72%"}}
+          onDrag={handleDrag}
+          drag
+          dragConstraints={constraintsRef}
+          className="absolute  md:inline-block">
+          <Image
+            onMouseDown={handleMouseDown}
+            onMouseUp={(e) => {
+              handleMouseUp(e, img8xp);
+            }}
+            draggable="false"
+            className=" rounded-sm "
+            height={100}
+            width={90}
+            src={img8xp}
+            alt="Name example"></Image>
+        </motion.div>
       </motion.div>
 
       {/*  movile dragable */}
@@ -274,6 +322,60 @@ export default function ImgView() {
             height={100}
             width={90}
             src={img5xp}
+            alt=""></Image>
+        </motion.div>
+        <motion.div
+          style={{top: "24%", left: "6%"}}
+          onDrag={handleDrag}
+          drag
+          dragConstraints={constraintsResponsiveRef}
+          className="absolute  md:inline-block">
+          <Image
+            onMouseDown={handleMouseDown}
+            onMouseUp={(e) => {
+              handleMouseUp(e, img6xp);
+            }}
+            draggable="false"
+            className=" rounded-sm "
+            height={100}
+            width={90}
+            src={img6xp}
+            alt=""></Image>
+        </motion.div>
+        <motion.div
+          style={{top: "43%", left: "73%"}}
+          onDrag={handleDrag}
+          drag
+          dragConstraints={constraintsResponsiveRef}
+          className="absolute  md:inline-block">
+          <Image
+            onMouseDown={handleMouseDown}
+            onMouseUp={(e) => {
+              handleMouseUp(e, img7xp);
+            }}
+            draggable="false"
+            className=" rounded-sm "
+            height={100}
+            width={90}
+            src={img7xp}
+            alt=""></Image>
+        </motion.div>
+        <motion.div
+          style={{top: "62%", left: "20%"}}
+          onDrag={handleDrag}
+          drag
+          dragConstraints={constraintsResponsiveRef}
+          className="absolute  md:inline-block">
+          <Image
+            onMouseDown={handleMouseDown}
+            onMouseUp={(e) => {
+              handleMouseUp(e, img8xp);
+            }}
+            draggable="false"
+            className=" rounded-sm "
+            height={100}
+            width={90}
+            src={img8xp}
             alt=""></Image>
         </motion.div>
       </motion.div>
