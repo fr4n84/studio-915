@@ -8,7 +8,7 @@ import logoFooter from "../../assets/images/logoFooter.png";
 
 export default function Footer() {
   const routerName = usePathname();
-  const currentRouter = routerName == "/contacts" || routerName == "/studio";
+  const currentRouter =  routerName == "/studio";
   const contactRouter = routerName == "/contacts";
   const homeRouter = routerName == "/";
   const studioRouter = routerName == "/studio";
@@ -17,7 +17,7 @@ export default function Footer() {
       <div
         className={`flex  px-4 md:px-7 ${
           currentRouter ? "mt-5" : "md:fixed mt-10"
-        } butom-0 left-0 right-0 `}>
+        } bottom-0 left-0 right-0 `}>
         {homeRouter && (
           <p className="size-left lg:ms-12">
             SOMOS STUDIO 9.13, UN GRUPO DE CREATIVOS ENFOCADO EN CONECTAR TALENTO

@@ -10,7 +10,7 @@ export default function Nav() {
   const routerName = usePathname();
   const validateRouteLogo =
     routerName == "/" || routerName == "/contacts" || routerName == "/studio";
-  const validateRouteFixed = routerName == "/";
+  const validateRouteFixed = routerName == "/" || routerName == "/contacts";
   return (
     <>
       <div

@@ -14,6 +14,7 @@ html.lenis {
   display: table;
 }
 
+
 .logo-size {
   color: #ff3300 !important;
   font-size: 12rem !important;
@@ -29,9 +30,10 @@ html.lenis {
 }
 
 .slides {
-  margin-top: 270px;
   display: flex;
+  height: 100vh;
   gap: 200px;
+  align-items: center;
 }
 
 .slides img {
@@ -137,6 +139,13 @@ html.lenis {
   object-fit: cover !important;
 }
 
+.contact-container{
+  height: 100vh;
+  display: grid;
+  margin: 0 auto;
+  align-items: center;
+}
+
 .swiperResponsive:nth-child(1n) {
   width: 90%;
 }
@@ -183,13 +192,16 @@ html.lenis {
     margin-left: 0px !important;
   }
 
+  .contact-container{
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    align-items: center;
+  }
+
 }
 
 @media screen and (max-width: 1920px) and (min-width: 759px) {
-  .slides {
-    margin-top: 224px;
-    gap: 200px;
-  }
 
   .size-left {
     width: 40%;
