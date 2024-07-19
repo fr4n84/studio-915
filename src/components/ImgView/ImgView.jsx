@@ -56,7 +56,6 @@ export default function ImgView() {
   };
 
   const handleMouseUp = (e, img) => {
-    console.log(img);
     // Delay the check to ensure drag event is captured
     setTimeout(() => {
       if (!isDragging) {
@@ -69,7 +68,6 @@ export default function ImgView() {
     setIsDragging(true);
   };
 
-  console.log(constraintsRef);
 
   return (
     <>
@@ -90,7 +88,7 @@ export default function ImgView() {
             }}
             draggable="false"
             className=" rounded-sm "
-            height={100}
+            height={'auto'}
             width={90}
             src={img1xp}
             alt="Name example"></Image>
@@ -109,7 +107,7 @@ export default function ImgView() {
             }}
             draggable="false"
             className=" rounded-sm "
-            height={100}
+            height={'auto'}
             width={90}
             src={img2xp}
             alt="Name example"></Image>
@@ -128,7 +126,7 @@ export default function ImgView() {
             }}
             draggable="false"
             className=" rounded-sm "
-            height={100}
+            height={'auto'}
             width={90}
             src={img3xp}
             alt="Name example"></Image>
@@ -147,7 +145,7 @@ export default function ImgView() {
             }}
             draggable="false"
             className=" rounded-sm "
-            height={100}
+            height={'auto'}
             width={90}
             src={img4xp}
             alt="Name example"></Image>
@@ -165,7 +163,7 @@ export default function ImgView() {
             }}
             draggable="false"
             className=" rounded-sm "
-            height={100}
+            height={'auto'}
             width={90}
             src={img5xp}
             alt="Name example"></Image>
@@ -184,7 +182,7 @@ export default function ImgView() {
             }}
             draggable="false"
             className=" rounded-sm "
-            height={100}
+            height={'auto'}
             width={90}
             src={img6xp}
             alt="Name example"></Image>
@@ -202,7 +200,7 @@ export default function ImgView() {
             }}
             draggable="false"
             className=" rounded-sm "
-            height={100}
+            height={'auto'}
             width={90}
             src={img7xp}
             alt="Name example"></Image>
@@ -220,7 +218,7 @@ export default function ImgView() {
             }}
             draggable="false"
             className=" rounded-sm "
-            height={100}
+            height={'auto'}
             width={90}
             src={img8xp}
             alt="Name example"></Image>
@@ -244,7 +242,7 @@ export default function ImgView() {
             }}
             draggable="false"
             className=" rounded-sm "
-            height={100}
+            height={'auto'}
             width={90}
             src={img1xp}
             alt=""></Image>
@@ -263,7 +261,7 @@ export default function ImgView() {
             }}
             draggable="false"
             className=" rounded-sm "
-            height={100}
+              height={'auto'}
             width={90}
             src={img2xp}
             alt=""></Image>
@@ -282,7 +280,7 @@ export default function ImgView() {
             }}
             draggable="false"
             className=" rounded-sm "
-            height={100}
+              height={'auto'}
             width={90}
             src={img3xp}
             alt=""></Image>
@@ -301,7 +299,7 @@ export default function ImgView() {
             }}
             draggable="false"
             className=" rounded-sm "
-            height={100}
+              height={'auto'}
             width={90}
             src={img4xp}
             alt=""></Image>
@@ -319,7 +317,7 @@ export default function ImgView() {
             }}
             draggable="false"
             className=" rounded-sm "
-            height={100}
+              height={'auto'}
             width={90}
             src={img5xp}
             alt=""></Image>
@@ -337,7 +335,7 @@ export default function ImgView() {
             }}
             draggable="false"
             className=" rounded-sm "
-            height={100}
+              height={'auto'}
             width={90}
             src={img6xp}
             alt=""></Image>
@@ -355,7 +353,7 @@ export default function ImgView() {
             }}
             draggable="false"
             className=" rounded-sm "
-            height={100}
+              height={'auto'}
             width={90}
             src={img7xp}
             alt=""></Image>
@@ -373,7 +371,7 @@ export default function ImgView() {
             }}
             draggable="false"
             className=" rounded-sm "
-            height={100}
+              height={'auto'}
             width={90}
             src={img8xp}
             alt=""></Image>
