@@ -202,6 +202,11 @@ html.lenis {
 }
 
 @media screen and (max-width: 758px) {
+  .studio_text-big {
+    font-size: 2.5rem;
+    padding-right: 19px;
+  }
+
   .slides {
     margin-top: 270px;
     display: none;
