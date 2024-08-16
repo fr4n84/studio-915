@@ -6,10 +6,10 @@ import Image from "next/image";
 import Link from "next/link";
 //Import images
 import img1xp from "../../assets/images/img1xp.jpg";
-import img2xp from "../../assets/images/img2xp.jpg";
-import img3xp from "../../assets/images/img3xp.jpg";
-import img4xp from "../../assets/images/img4xp.jpg";
-import img5xp from "../../assets/images/img5xp.jpg";
+import img2xp from "../../assets/images/img2xp.webp";
+import img3xp from "../../assets/images/img3xp.webp";
+import img4xp from "../../assets/images/img4xp.webp";
+import img5xp from "../../assets/images/img5xp.webp";
 import img6xp from "../../assets/images/img6xp.jpg";
 import img7xp from "../../assets/images/img7xp.jpg";
 import img8xp from "../../assets/images/img8xp.jpg";
@@ -146,7 +146,7 @@ export default function ImgView() {
             draggable="false"
             className=" rounded-sm "
             height={'auto'}
-            width={90}
+            width={150}
             src={img4xp}
             alt="Name example"></Image>
         </motion.div>
@@ -164,7 +164,7 @@ export default function ImgView() {
             draggable="false"
             className=" rounded-sm "
             height={'auto'}
-            width={90}
+            width={150}
             src={img5xp}
             alt="Name example"></Image>
         </motion.div>
@@ -262,7 +262,7 @@ export default function ImgView() {
             draggable="false"
             className=" rounded-sm "
               height={'auto'}
-            width={90}
+            width={120}
             src={img2xp}
             alt=""></Image>
         </motion.div>
@@ -300,7 +300,7 @@ export default function ImgView() {
             draggable="false"
             className=" rounded-sm "
               height={'auto'}
-            width={90}
+            width={150}
             src={img4xp}
             alt=""></Image>
         </motion.div>
@@ -318,7 +318,7 @@ export default function ImgView() {
             draggable="false"
             className=" rounded-sm "
               height={'auto'}
-            width={90}
+            width={150}
             src={img5xp}
             alt=""></Image>
         </motion.div>
