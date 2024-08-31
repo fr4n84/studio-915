@@ -7,13 +7,13 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 //Import img
-import img1 from "../../assets/images/img1.jpg";
-import img2 from "../../assets/images/img2.jpeg";
-import img3 from "../../assets/images/img3.jpeg";
-import img4 from "../../assets/images/img4.jpg";
-import img5 from "../../assets/images/img5.jpg";
-import img6 from "../../assets/images/img6.jpg";
-import img7 from "../../assets/images/img7.jpg";
+import img1 from "../../../public/img/assets/img1.jpg";
+import img2 from "../../../public/img/assets/img2.webp";
+import img3 from "../../../public/img/assets/img3.jpg";
+import img4 from "../../../public/img/assets/img4.jpg";
+import img5 from "../../../public/img/assets/img5.jpg";
+import img6 from "../../../public/img/assets/img6.jpg";
+import img7 from "../../../public/img/assets/img7.jpg";
 //Import next fuction
 import Image from "next/image";
 

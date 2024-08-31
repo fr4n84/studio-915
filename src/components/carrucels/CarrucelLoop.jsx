@@ -4,20 +4,13 @@ import {ReactLenis} from "lenis/react";
 //Import next fuction
 import Image from "next/image";
 //Import images
-import img1 from "../../assets/images/img1.jpg";
-import img4 from "../../assets/images/img4.jpg";
-import img5 from "../../assets/images/img5.jpg";
-import img6 from "../../assets/images/img6.jpg";
-import img7 from "../../assets/images/img7.jpg";
-import img8 from "../../assets/images/img8.jpg";
-import img9 from "../../assets/images/img9.jpg";
-import img10 from "../../assets/images/img10.jpg";
-import img11 from "../../assets/images/img11.jpg";
-import img12 from "../../assets/images/img11.jpg";
-import img13 from "../../assets/images/img11.jpg";
-import img14 from "../../assets/images/img11.jpg";
-import img15 from "../../assets/images/img11.jpg";
-import img16 from "../../assets/images/img11.jpg";
+import img1 from "../../../public/img/assets/img1.jpg";
+import img2 from "../../../public/img/assets/img2.webp";
+import img3 from "../../../public/img/assets/img3.jpg";
+import img4 from "../../../public/img/assets/img4.jpg";
+import img5 from "../../../public/img/assets/img5.jpg";
+import img6 from "../../../public/img/assets/img6.jpg";
+import img7 from "../../../public/img/assets/img7.jpg";
 //Import react fuctions
 import {useState, useEffect} from "react";
 //Import mui compoents
@@ -65,18 +58,142 @@ export default function CarrucelLoop() {
         infinite: validatorInfinity,
         syncTouch: true,
       }}>
-      <div className="slides">
-        <Image height={300} width={200} objectFit="cover" src={img7} alt="" />
-        <Image height={300} width={200} objectFit="cover" src={img1} alt="" />
-        <Image height={300} width={200} objectFit="cover" src={img4} alt="" />
-        <Image height={300} width={200} objectFit="cover" src={img5} alt="" />
-        <Image height={300} width={200} objectFit="cover" src={img6} alt="" />
-        <Image height={300} width={200} objectFit="cover" src={img7} alt="" />
-        <Image height={300} width={200} objectFit="cover" src={img1} alt="" />
-        <Image height={300} width={200} objectFit="cover" src={img4} alt="" />
-        <Image height={300} width={200} objectFit="cover" src={img5} alt="" />
-        <Image height={300} width={200} objectFit="cover" src={img6} alt="" />
-        <Image height={300} width={200} objectFit="cover" src={img7} alt="" />
+          <div className="slides">
+        <div>
+          <Image
+            width={500} 
+            height={284} 
+            className="custom-image"
+            src={img7}
+            alt=""
+          />
+        </div>
+        <div>
+          <Image
+            width={500} 
+            height={284} 
+            className="custom-image"
+            src={img1}
+            alt=""
+          />
+        </div>
+        <div>
+          <Image
+            width={500} 
+            height={284} 
+            className="custom-image"
+            src={img2}
+            alt=""
+          />
+        </div>
+        <div>
+          <Image
+            width={500} 
+            height={284} 
+            className="custom-image"
+            src={img3}
+            alt=""
+          />
+        </div>
+        <div>
+          <Image
+            width={500} 
+            height={284} 
+            className="custom-image"
+            src={img4}
+            alt=""
+          />
+        </div>
+        <div>
+          <Image
+            width={500} 
+            height={284} 
+            className="custom-image"
+            src={img5}
+            alt=""
+          />
+        </div>
+        <div>
+          <Image
+            width={500} 
+            height={284} 
+            className="custom-image"
+            src={img6}
+            alt=""
+          />
+        </div>
+        <div>
+          <Image
+            width={500} 
+            height={284} 
+            className="custom-image"
+            src={img7}
+            alt=""
+          />
+        </div>
+        <div>
+          <Image
+            width={500} 
+            height={284} 
+            className="custom-image"
+            src={img1}
+            alt=""
+          />
+        </div>
+        <div>
+          <Image
+            width={500} 
+            height={284} 
+            className="custom-image"
+            src={img2}
+            alt=""
+          />
+        </div>
+        <div>
+          <Image
+            width={500} 
+            height={284} 
+            className="custom-image"
+            src={img3}
+            alt=""
+          />
+        </div>
+        <div>
+          <Image
+            width={500} 
+            height={284} 
+            className="custom-image"
+            src={img4}
+            alt=""
+          />
+        </div>
+        <div>
+          <Image
+            width={500} 
+            height={284} 
+            className="custom-image"
+            src={img5}
+            alt=""
+          />
+        </div>
+        <div>
+          <Image
+            width={500} 
+            height={284} 
+            className="custom-image"
+            src={img6}
+            alt=""
+          />
+        </div>
+        <div>
+          <Image
+            width={500} 
+            height={284} 
+            className="custom-image"
+            src={img7}
+            alt=""
+          />
+        </div>
       </div>
 
       <Dialog

@@ -8,7 +8,7 @@ import { Grid } from "@mui/material";
 import { ReactLenis } from "lenis/react";
 //Import next fuction
 import Image from "next/image";
-import img5 from "../../assets/images/img5.jpg";
+import img5 from "../../../public/img/assets/img5.jpg";
 export default function first(second) {
   return (
     <ReactLenis
