@@ -225,6 +225,12 @@ html.lenis {
     margin: 0px 20px;
   }
 
+  .size-contact {
+    width: 100%;
+    font-size: 14px !important;
+    margin: 0px 20px;
+  }
+
   .logo-size {
     font-size: 4rem !important;
   }
@@ -256,6 +262,17 @@ html.lenis {
   .img-logo--footer {
     height: 130px;
   }
+
+  .img-logo--animating{
+    width: 367px;
+    height: 170px;
+  }
+
+  .slides div {
+    width: 461px;
+    height: 220px;
+    transition: all 0.35s;
+  }
 }
 
 @media screen and (max-width: 1920px) and (min-width: 759px) {
@@ -263,6 +280,11 @@ html.lenis {
   .size-left {
     width: 40%;
     font-size: 14px !important;
+  }
+
+  .size-contact {
+    width: 40%;
+    font-size: 16px !important;
   }
   .line-height_size {
     margin-top: -50px;
