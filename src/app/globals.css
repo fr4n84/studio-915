@@ -38,22 +38,28 @@ html.lenis {
 .slides {
   display: flex;
   height: 100vh;
-  gap: 200px;
+  gap: 120px;
   align-items: center;
 }
 
-.slides img {
-  border-radius: 15px;
-  width: 100vw;
+.slides div {
+  width: 461px;
   height: 284px;
   transition: all 0.35s;
+}
+
+.custom-image{
+  border-radius: 15px;
+  width: 100%;
+  height: 284px;
+  object-fit: cover !important;
 }
 
 .studio_text-big {
   font-size: 3rem;
 }
 
-.slides img:hover {
+.slides div:hover {
   -webkit-transition: all 0.35s;
   transition: all 0.35s;
   transform: translate3d(13.3315px, 0px, 0px) scale(1.1);
@@ -219,6 +225,12 @@ html.lenis {
     margin: 0px 20px;
   }
 
+  .size-contact {
+    width: 100%;
+    font-size: 14px !important;
+    margin: 0px 20px;
+  }
+
   .logo-size {
     font-size: 4rem !important;
   }
@@ -250,6 +262,17 @@ html.lenis {
   .img-logo--footer {
     height: 130px;
   }
+
+  .img-logo--animating{
+    width: 367px;
+    height: 170px;
+  }
+
+  .slides div {
+    width: 461px;
+    height: 220px;
+    transition: all 0.35s;
+  }
 }
 
 @media screen and (max-width: 1920px) and (min-width: 759px) {
@@ -257,6 +280,11 @@ html.lenis {
   .size-left {
     width: 40%;
     font-size: 14px !important;
+  }
+
+  .size-contact {
+    width: 40%;
+    font-size: 16px !important;
   }
   .line-height_size {
     margin-top: -50px;

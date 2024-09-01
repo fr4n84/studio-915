@@ -6,9 +6,6 @@ import Footer from "@/components/Footer/Footer";
 import { Grid } from "@mui/material";
 //Import lenis
 import { ReactLenis } from "lenis/react";
-//Import next fuction
-import Image from "next/image";
-import img5 from "../../assets/images/img5.jpg";
 export default function first(second) {
   return (
     <ReactLenis
@@ -29,15 +26,7 @@ export default function first(second) {
             DESARROLLÁNDOSE.
           </p>
         </Grid>
-        <Grid item xs={12} lg={6} display="flex" justifyContent="center">
-          <Image
-            className="text-end block md:hidden"
-            height={900}
-            width={600}
-            src={img5}
-            alt=""
-          />
-        </Grid>
+
       </Grid>
       <Footer />
       <Grid className="md:px-5 md:pe-7 md:ps-7" container spacing={6}>

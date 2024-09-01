@@ -41,7 +41,7 @@ export default function Footer() {
           </span>
         )}
         {contactRouter && (
-          <span className="size-left">
+          <span className="size-contact">
             <p>Info@the913studio.com</p>
             <p> 644274891</p>
             <p>IG: studio.9.13</p>

@@ -5,7 +5,6 @@ import {useState, useEffect, useRef} from "react";
 import Image from "next/image";
 import Link from "next/link";
 //Import images
-import img1xp from "../../assets/images/img1xp.jpg";
 import img2xp from "../../assets/images/img2xp.webp";
 import img3xp from "../../assets/images/img3xp.webp";
 import img4xp from "../../assets/images/img4xp.webp";
@@ -75,24 +74,6 @@ export default function ImgView() {
       <motion.div
         ref={constraintsRef}
         className="container-dragable hidden md:block ">
-        <motion.div
-          style={{bottom: "30%", left: "50%"}}
-          onDrag={handleDrag}
-          drag
-          dragConstraints={constraintsRef}
-          className="absolute  md:inline-block">
-          <Image
-            onMouseDown={handleMouseDown}
-            onMouseUp={(e) => {
-              handleMouseUp(e, img1xp);
-            }}
-            draggable="false"
-            className=" rounded-sm "
-            height={'auto'}
-            width={90}
-            src={img1xp}
-            alt="Name example"></Image>
-        </motion.div>
 
         <motion.div
           style={{bottom: "10%", left: "3%"}}
@@ -229,25 +210,6 @@ export default function ImgView() {
       <motion.div
         ref={constraintsResponsiveRef}
         className="container-dragable  md:hidden">
-        <motion.div
-          style={{bottom: "30%", left: "50%"}}
-          onDrag={handleDrag}
-          drag
-          dragConstraints={constraintsResponsiveRef}
-          className="absolute  md:inline-block">
-          <Image
-            onMouseDown={handleMouseDown}
-            onMouseUp={(e) => {
-              handleMouseUp(e, img1xp);
-            }}
-            draggable="false"
-            className=" rounded-sm "
-            height={'auto'}
-            width={90}
-            src={img1xp}
-            alt=""></Image>
-        </motion.div>
-
         <motion.div
           style={{bottom: "10%", left: "3%"}}
           onDrag={handleDrag}
