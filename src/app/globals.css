@@ -28,6 +28,7 @@ html.lenis {
 
 .img-logo--footer {
   height: 150px;
+  padding-bottom: 1rem;
 }
 
 .img-logo--animating{
@@ -40,12 +41,19 @@ html.lenis {
   height: 100vh;
   gap: 120px;
   align-items: center;
+  @media (width <= 1366px) {
+    gap: 100px;
+  }
 }
 
 .slides div {
   width: 461px;
   height: 284px;
   transition: all 0.35s;
+  @media (width <= 1366px) {
+    width: 361px;
+    height: 269px;
+  }
 }
 
 .custom-image{
@@ -53,6 +61,10 @@ html.lenis {
   width: 100%;
   height: 284px;
   object-fit: cover !important;
+
+  @media (width <= 1366px) {
+    height: 269px;
+  }
 }
 
 .studio_text-big {
@@ -268,11 +280,6 @@ html.lenis {
     height: 170px;
   }
 
-  .slides div {
-    width: 461px;
-    height: 220px;
-    transition: all 0.35s;
-  }
 }
 
 @media screen and (max-width: 1920px) and (min-width: 759px) {
