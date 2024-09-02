@@ -19,7 +19,7 @@ export default function Footer() {
           currentRouter ? "mt-5" : "md:fixed mt-10"
         } bottom-0 left-0 right-0 `}>
         {homeRouter && (
-          <p className="size-left lg:ms-12">
+          <p className="size-left ">
             SOMOS STUDIO 9.13, UN GRUPO DE CREATIVOS ENFOCADO EN CONECTAR TALENTO
             CON MARCAS Y EMPRESAS APORTANDO NUESTRA VISIÓN E IDEAS. <br />{" "}
             TRABAJAMOS DE MANERA CONJUNTA CON DIFERENTES ARTISTAS PARA DIFUNDIR
@@ -48,7 +48,7 @@ export default function Footer() {
             <p>Linkedin: Studio 9.13</p>
           </span>
         )}
-        <footer className="grow  text-end hidden md:flex justify-end ">
+        <footer className="grow  text-end hidden md:flex justify-end items-end">
           <Image
             height={500}
             width={600}
