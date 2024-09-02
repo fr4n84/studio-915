@@ -42,7 +42,7 @@ export default function first(second) {
           justifyContent="center"
           className="md:mt-14 justify-end"
         >
-          <p className="font-bold px-4 md:px-0 text-position_contact">
+          <p className="font-bold px-4 md:px-0 md:pt-5 text-position_contact ">
             #CULTURA
           </p>
           <p className="px-4 md:px-0 md:w-2/3 text-position_contact">

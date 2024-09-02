@@ -112,7 +112,7 @@ export default function Nav() {
           href="/"
           className="text-8xl  md:hidden logo-size text-center mt-10 flex justify-center"
         >
-          <Image src={logoResponsive} width={300} alt="Logo 913Studio"></Image>
+          <Image src={logoResponsive} width={350} alt="Logo 913Studio"></Image>
         </Link>
       </div>
       {loading && (
