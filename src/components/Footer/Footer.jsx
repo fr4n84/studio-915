@@ -20,12 +20,7 @@ export default function Footer() {
         } bottom-0 left-0 right-0 `}>
         {homeRouter && (
           <p className="size-left ">
-            SOMOS STUDIO 9.13, UN GRUPO DE CREATIVOS ENFOCADO EN CONECTAR TALENTO
-            CON MARCAS Y EMPRESAS APORTANDO NUESTRA VISIÓN E IDEAS. <br />{" "}
-            TRABAJAMOS DE MANERA CONJUNTA CON DIFERENTES ARTISTAS PARA DIFUNDIR
-            LA CULTURA Y LA ESTÉTICA, APORTANDO SOLUCIONES CREATIVAS Y
-            FUNCIONALES PARA MEJORAR LA COMUNICACIÓN DE LAS MARCAS. PROYECTOS
-            HECHOS A MEDIDA ENTENDIENDO LA SOCIEDAD EN 2024.
+            Al igual que nosotros al principio, las agencias suelen poner un texto aquí con un vocabulario aburrido y complejo, supongo que con el fin de parecer grandes expertos. Vayamos al grano: somos un grupo de creativos enfocados en crear ideas y estrategias que conecten tu negocio con la gente joven, realizando proyectos a medida, entendiendo lo que demanda la sociedad en la actualidad y trabajando en conjunto con profesionales de distintas áreas para obtener resultados top. Somos gente curiosa, analítica y resolutiva; lo que más nos gusta es pensar.
           </p>
         )}
         {studioRouter && (
