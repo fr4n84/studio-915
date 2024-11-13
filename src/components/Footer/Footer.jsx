@@ -20,13 +20,13 @@ export default function Footer() {
         } bottom-0 left-0 right-0 `}>
         {homeRouter && (
           <p className="size-left ">
-            Al igual que nosotros al principio, las agencias suelen poner un texto aquí 
-            con un vocabulario aburrido y complejo, supongo que con el fin de parecer grandes expertos. 
-            Vayamos al grano: somos un grupo de creativos enfocados en crear ideas y estrategias 
-            que conecten tu negocio con la gente joven, realizando proyectos a medida, 
-            entendiendo lo que demanda la sociedad en la actualidad y trabajando en conjunto con profesionales 
-            de distintas áreas para obtener resultados top. Somos gente curiosa, analítica y resolutiva; 
-            lo que más nos gusta es pensar.
+            AL IGUAL QUE NOSOTROS AL PRINCIPIO, LAS AGENCIAS SUELEN PONER UN TEXTO AQUÍ
+CON UN VOCABULARIO ABURRIDO Y COMPLEJO, SUPONGO QUE CON EL FIN DE PARECER GRANDES EXPERTOS.
+VAYAMOS AL GRANO: SOMOS UN GRUPO DE CREATIVOS ENFOCADOS EN CREAR IDEAS Y ESTRATEGIAS
+QUE CONECTEN TU NEGOCIO CON LA GENTE JOVEN, REALIZANDO PROYECTOS A MEDIDA,
+ENTENDIENDO LO QUE DEMANDA LA SOCIEDAD EN LA ACTUALIDAD Y TRABAJANDO EN CONJUNTO CON PROFESIONALES
+DE DISTINTAS ÁREAS PARA OBTENER RESULTADOS TOP. SOMOS GENTE CURIOSA, ANALÍTICA Y RESOLUTIVA;
+LO QUE MÁS NOS GUSTA ES PENSAR.
           </p>
         )}
         {studioRouter && (
